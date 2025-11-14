@@ -1,4 +1,4 @@
 [submodule "noahmp"]
 	path = noahmp
-	url = https://github.com/bieri2/noahmp-bieri-et-al-2024-EGU-GMD
+	url = https://github.com/bieri2/noahmp
 	branch = DynaRoot

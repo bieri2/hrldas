@@ -1365,6 +1365,12 @@ contains
               call add_to_output(NoahmpIO%FSATXY     , "FSAT"    , "saturated fraction of the grid"                           , "-" )
               call add_to_output(NoahmpIO%WSURFXY    , "WSURF"   , "Wetland Water Storage"                                    , "mm")
             endif
+            ! DynaRoot
+            if ( NoahmpIO%IOPT_ROOT == 1 ) then
+              call add_to_output(NoahmpIO%EASYXY        , "EASEFUNCTION", "Ease function"                                     , "-", "SOIL" )
+              call add_to_output(NoahmpIO%ROOTACTIVITYXY, "ROOTACTIVITY", "Root activity"                                     , "-", "SOIL" )
+              call add_to_output(NoahmpIO%INACTIVEXY    , "INACTIVE"    , "Number of time steps without active roots"         , "-", "SOIL" )  
+            endif
 
            ! For now, no urban output variables included
 

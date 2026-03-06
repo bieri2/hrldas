@@ -193,7 +193,8 @@ OBJS = \
         ../../noahmp/src/RunoffSurfaceWetlandMod.o \
         ../../noahmp/src/WetlandWaterZhang22Mod.o \
 	../../noahmp/src/WaterMainGlacierMod.o \
-	../../noahmp/src/DynaRootGrowDieMod.o
+	../../noahmp/src/DynaRootGrowDieMod.o \
+	../../noahmp/src/SoilMatricPotentialMod.o
 
 CMD = hrldas.exe
 all:	$(CMD)
